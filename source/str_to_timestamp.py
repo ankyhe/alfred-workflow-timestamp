@@ -47,7 +47,7 @@ if len(sys.argv) == 1:
     add_align_time(now, -24 * 30, '-30d 00:00', display)
     add_time(now, -24 * 90, '-90d', display)
     add_align_time(now, -24 * 90, '-90d 00:00', display)
-    print display
+    print(display)
 else:
     display = Display()
     datetime_str = sys.argv[1]
@@ -61,4 +61,4 @@ else:
     datetime_ts = dt2ts(datetime_obj)
     add_time(datetime_ts, 0, datetime_str, display, True)
     add_time(datetime_ts, 0, datetime_str, display, False)
-    print display
+    print(display)

@@ -44,4 +44,4 @@ if len(sys.argv) > 1:
             valid = 'YES', 
             arg = local_datetime.strftime(FORMAT_WITHOUT_TZINFO),
             icon = 'icon.png')
-    print display
+    print(display)

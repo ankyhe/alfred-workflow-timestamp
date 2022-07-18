@@ -7,7 +7,10 @@ class Display(object):
         self.__items = et.Element('items')
 
     def __repr__(self):
-        return et.tostring(self.__items)
+        return et.tostring(self.__items).decode()
+
+    def __str__(self):
+        return et.tostring(self.__items).decode()
 
     def add_item(self, title, subtitle="", arg="", valid="yes", autocomplete="", icon="icon.png"):
         item = et.SubElement(self.__items, 
